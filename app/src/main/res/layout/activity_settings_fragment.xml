@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/pagestyle1"
+        android:id="@+id/age"
+        android:elevation="2dp">
+        <com.appyvet.materialrangebar.RangeBar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:mrb_rangeBar="true"
+            app:mrb_pinMaxFont="15sp"
+            app:mrb_pinMinFont="12sp"
+            app:mrb_rangeBarPaddingBottom="20dp"
+            app:mrb_selectorBoundaryColor="@color/colorAccent"
+            app:mrb_selectorBoundarySize="2dp"
+            app:mrb_pinTextColor="@color/white"
+            app:mrb_temporaryPins="true"
+            app:mrb_selectorSize="10dp"
+            app:mrb_tickEnd="70"
+            app:mrb_tickInterval="1"
+            app:mrb_tickStart="18"
+            app:mrb_pinRadius="14dp"
+            app:mrb_rangeBar_rounded="true"
+            app:mrb_connectingLineColors="@color/colorPrimaryDark"
+            app:mrb_pinColor="#6c3f6a"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:text="Age"
+            android:id="@+id/agetext"
+            android:textColor="@color/colorAccent"/>
+
+
+        <TextView
+            android:id="@+id/eighnteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/agetext"
+            android:text="18"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/seventy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/agetext"
+            android:layout_alignParentRight="true"
+            android:text="70"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/pagestyle1"
+        android:layout_below="@+id/age"
+        android:id="@+id/interestedin"
+        android:elevation="2dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:text="Interested In"
+            android:id="@+id/interestedintext"
+            android:textColor="@color/colorAccent"/>
+
+
+        <TextView
+            android:id="@+id/mentext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/interestedintext"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Men"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/interestedintext" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:text="Women"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_below="@+id/mentext"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mentext"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/pagestyle1"
+        android:layout_below="@+id/interestedin"
+        android:id="@+id/alerts"
+        android:elevation="2dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:text="Alerts"
+            android:id="@+id/alertstext"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:text="Sound"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_below="@+id/alertstext"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/alertstext"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="10dp"
+            android:max="10"
+            android:progress="7" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/pagestyle1"
+        android:layout_below="@+id/alerts"
+        android:id="@+id/mode"
+        android:elevation="2dp">
+        <TextView
+            android:id="@+id/matchmodetextfield1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:text="Matchmaker-Only Mode"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:text="Hide My Profile"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_below="@+id/matchmodetextfield1"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/matchmodetextfield1"/>
+
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/pagestyleround"
+        android:layout_below="@+id/mode"
+        android:text="Whitelist my App"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:id="@+id/whitelist"
+        android:elevation="2dp"
+        android:clickable="true">
+    </Button>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

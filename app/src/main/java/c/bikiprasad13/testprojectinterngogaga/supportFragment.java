@@ -1,0 +1,31 @@
+package c.bikiprasad13.testprojectinterngogaga;
+
+import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class supportFragment extends Fragment {
+
+private android.support.v4.app.Fragment msupportFragment;
+private View msupportFragmentView;
+
+    public supportFragment() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        msupportFragmentView =inflater.inflate(R.layout.activity_support_fragment, container, false);
+
+
+
+        return msupportFragmentView;
+
+    }
+}
