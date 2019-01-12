@@ -6,4 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".supportFragment">
 
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/faq"
+        android:clickable="true">
+        <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="FAQs"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/feedback"
+        android:layout_below="@id/faq"
+        android:clickable="true">
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Feedback"
+        android:textSize="16dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/feedback"
+        android:id="@+id/policies"
+        android:clickable="true">
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Policies"
+        android:clickable="true"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wantatour"
+        android:layout_below="@id/policies"
+        android:clickable="true">
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Want a take a tour"
+        android:textSize="16dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+    </RelativeLayout>
 </RelativeLayout>

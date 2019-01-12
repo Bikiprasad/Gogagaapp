@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".profileFragment">
 
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:text="Flames"
+        android:background="@drawable/pagestyleround"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:id="@+id/flames"
+        android:elevation="2dp"
+        android:clickable="true"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:text="Invite Friends"
+        android:background="@drawable/pagestyleround"
+        android:drawableStart="@drawable/ic_person_add_black_24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:id="@+id/invitefriends"
+        android:elevation="2dp"
+        android:clickable="true"/>
+
+
+
 </RelativeLayout>
